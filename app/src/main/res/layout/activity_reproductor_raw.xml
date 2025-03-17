@@ -8,7 +8,7 @@
     tools:context=".ReproductorRawActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/texto1_raw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -18,4 +18,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="354dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imabotonPause_raw"
+            android:layout_width="195dp"
+            android:layout_height="116dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/pausa" />
+
+        <ImageButton
+            android:id="@+id/imabotonPlay_raw"
+            android:layout_width="196dp"
+            android:layout_height="116dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/play" />
+
+        <ImageButton
+            android:id="@+id/imabotonStop_raw"
+            android:layout_width="wrap_content"
+            android:layout_height="116dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/stop" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
